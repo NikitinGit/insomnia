@@ -1,0 +1,1013 @@
+type: collection.insomnia.rest/5.0
+name: My Collection
+meta:
+  id: wrk_7cff593e3dee41658b938d766eb7242a
+  created: 1742998287177
+  modified: 1742998287177
+collection:
+  - url: http://localhost:6300/api/events/judge/bid_status
+    name: judge_role
+    meta:
+      id: req_18f07402ac4b48f0a9eff95745cf8969
+      created: 1742999190650
+      modified: 1743144180717
+      isPrivate: false
+      sortKey: -1742999190650
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "414"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEzLCJyb2xlIjoianVkZ2UiLCJleHAiOjE3NTA3NTM5OTZ9.CKYC7CozmAowvQSbQyBMBhStpiOCDY5hJEOb_VJ_fGI
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/event
+    name: get_data_for_create_event
+    meta:
+      id: req_ebb36d4b0e8a46d2b6f44062bd181a42
+      created: 1743758410056
+      modified: 1743758838800
+      isPrivate: false
+      sortKey: -1742999190600
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "414"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/get_event_for_edit
+    name: get_event_for_edit
+    meta:
+      id: req_1df7d5ddb6364bfc9c602ffdd74552ac
+      created: 1743837323330
+      modified: 1744974376420
+      isPrivate: false
+      sortKey: -1742999190550
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "414"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/event
+    name: create_event
+    meta:
+      id: req_a1d9b0fd013f4602a51384e9552cf5a2
+      created: 1743862192359
+      modified: 1745911238929
+      isPrivate: false
+      sortKey: -1742999190500
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_21573e51144b491f9936b2f3b2ac21fc
+          name: image1
+          disabled: false
+          type: file
+          fileName: /home/igor/Downloads/image.png
+        - id: pair_bec08c732e604e2d91605500d7788ff7
+          name: event_json_data
+          value: '{"sportId":"1","selectedDisciplineIds":[6, 10],"nameEvent":"Евент без
+            дисциплины","aboutEvent":"Создание мероприятия без
+            дисциплины","country":"Россия","region":"Москва","city":null,"address":"Цветочная
+            5","performancePlace":"place","performanceTime":"10:11","eventData":"2025-04-03","ringsCount":"1","payBySite":false,"sortitionAuto":true,"organizerPhone":"7
+            (000)
+            000-00-00","organizerMail":"test@test.ru","eventsPrices":[],"paid":false}'
+          disabled: false
+          type: text
+          multiline: application/json
+    parameters:
+      - id: pair_ccc66dab60bf4ca49f7f0e7c7b83eecd
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/event
+    name: edit_event
+    meta:
+      id: req_4acbc0f0e5cc423baeeda1a3910c0387
+      created: 1744019101116
+      modified: 1744909534948
+      isPrivate: false
+      sortKey: -1742999190450
+    method: PUT
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_21573e51144b491f9936b2f3b2ac21fc
+          name: image1
+          disabled: false
+          type: file
+          fileName: /home/igor/Downloads/image.png
+        - id: pair_bec08c732e604e2d91605500d7788ff7
+          name: event_json_data
+          value: |-
+            {
+            	"eventId" : 420,
+              "sportId" : 3,
+              "nameEvent" : "event by nikitin",
+              "aboutEvent" : "about",
+              "country" : "Россия",
+              "region" : "Москва",
+              "city" : "Москва",
+              "address" : "binnnn",
+              "performancePlace" : "noten",
+              "performanceTime" : "10:00",
+              "eventData" : "2025-06-06",
+              "ringsCount" : 3,
+              "payBySite" : true,
+              "sortitionAuto" : true,
+              "eventsPrices" : [],
+              "organizerPhone" : "8916101224",
+              "organizerMail" : "andnikitn5@gmail.com",
+            	"useDisciplines": true,
+              "selectedDisciplineIds": [2,5]
+            }
+          disabled: false
+          type: text
+          multiline: application/json
+    parameters:
+      - id: pair_ccc66dab60bf4ca49f7f0e7c7b83eecd
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://strikerstat-stage.twc1.net:6301/api/open_events/organizer/get_event_for_edit
+    name: get_event_for_edit-stage
+    meta:
+      id: req_1c9d24b69a954292bc33616f923bce98
+      created: 1744026278147
+      modified: 1744898717490
+      isPrivate: false
+      sortKey: -1742999190525
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "421"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://strikerstat-stage.twc1.net:6301/api/open_events/organizer/event
+    name: get_data_for_create_event-stage
+    meta:
+      id: req_d2ab5d6e3f97420d98aa379a4f38cedc
+      created: 1744026896343
+      modified: 1745996028820
+      isPrivate: false
+      sortKey: -1742999190575
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "414"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/event
+    name: get_event_page
+    meta:
+      id: req_2f56eb6eb08443419e435f51dadc0581
+      created: 1744106072106
+      modified: 1744883390751
+      isPrivate: false
+      sortKey: -1742999190587.5
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "417"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/fighter/bid_form
+    name: fighter-bid_form
+    meta:
+      id: req_c9befb2d86db40fea8ed53f394a59484
+      created: 1744189232574
+      modified: 1744196611993
+      isPrivate: false
+      sortKey: -1742999190581.25
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "415"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Im1lbWJlciIsImV4cCI6MTc3NTczMzA0Nn0.TgXw3Oz2irjsKjDwmj8bmpI6El2YQh7NVS9iSfIP4_A
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/fighter/send_bid
+    name: fighter-send-bid
+    meta:
+      id: req_c2dd2799a6d14097b769f8732a2dd550
+      created: 1744191841637
+      modified: 1746195352078
+      isPrivate: false
+      sortKey: -1742999190578.125
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "eventId": 433, 
+          "weight": 65.3,
+          "disciplineId":4,
+          "disciplineComment": null
+        }
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkyLCJyb2xlIjoibWVtYmVyIiwiZXhwIjoxNzc1ODMwMDE3fQ.GwdoKnuecEM9wV6Y1rjwf6cPODS1gXtLgOs5hTvqWD0
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/trainer/pupils
+    name: get_pupils
+    meta:
+      id: req_8b22164495b443fda2245ee5eae931f0
+      created: 1744285122825
+      modified: 1744366592834
+      isPrivate: false
+      sortKey: -1742999190400
+    method: GET
+    parameters:
+      - id: pair_ccc66dab60bf4ca49f7f0e7c7b83eecd
+        name: eventId
+        value: "417"
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgxLCJyb2xlIjoic3Vuc2V5IiwiZXhwIjoxNzc1ODI3OTg0fQ.M9u8M8P5nK9Pg9_3MbuSrvUv9BHXtj0Fy7Jir3MW5Fg
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/trainer/discipline
+    name: change-discipline-id-by-trainer
+    meta:
+      id: req_81ae7d270ec3421c94ac7e4ca6551013
+      created: 1744361343979
+      modified: 1745329499334
+      isPrivate: false
+      sortKey: -1742999190350
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "fighterId": 120,
+          "eventId": 414,
+          "disciplineId": 1
+        }
+    parameters:
+      - id: pair_2a7e2569662c4c9eb2efcaec763dd681
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDMzNSwicm9sZSI6InN1bnNleSIsImV4cCI6MTc1MzEwNTE5NX0.od-sgeGG6rMN1Lq3ZAk0UK0OW09E_OBFMfmi38xcSJo
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/discipline
+    name: change-discipline-id-by-organizer
+    meta:
+      id: req_58506f0cf57b48e9bb7452f6ab1b05af
+      created: 1744368263813
+      modified: 1744369225679
+      isPrivate: false
+      sortKey: -1742999190300
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "fighterId": 120,
+          "eventId": 414,
+          "disciplineId": 1
+        }
+    parameters:
+      - id: pair_2a7e2569662c4c9eb2efcaec763dd681
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/open_events/sortition_list
+    name: sortition_list
+    meta:
+      id: req_9265f02021c84d6183ecd5835d4f4ddc
+      created: 1744629906126
+      modified: 1744630155673
+      isPrivate: false
+      sortKey: -1742999190537.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"idEvent": 414,
+          "numberUpdate": 47,
+          "ringNumber": 1 
+        }
+    parameters:
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/sortition
+    name: GET-sortition_list
+    meta:
+      id: req_26fbdc20d82e4bbdbb2ee3c9e82f5053
+      created: 1744630309213
+      modified: 1746182366633
+      isPrivate: false
+      sortKey: -1742999190531.25
+    method: GET
+    parameters:
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        name: eventId
+        value: "175"
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://strikerstat-stage.twc1.net:6301/api/open_events/event
+    name: get_event_page-stage
+    meta:
+      id: req_ff22a9c593ad415ca0d8b5c2d86530b5
+      created: 1744881721509
+      modified: 1744972823389
+      isPrivate: false
+      sortKey: -1742999190584.375
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "422"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://strikerstat-stage.twc1.net:6301/api/open_events/organizer/event
+    name: edit_event-stage
+    meta:
+      id: req_00991cbcc6464c1191e283696ddc7b8f
+      created: 1744897715959
+      modified: 1744909394719
+      isPrivate: false
+      sortKey: -1742999190425
+    method: PUT
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_21573e51144b491f9936b2f3b2ac21fc
+          name: image1
+          disabled: false
+          type: file
+          fileName: /home/igor/Downloads/image.png
+        - id: pair_bec08c732e604e2d91605500d7788ff7
+          name: event_json_data
+          value: |-
+            {
+            	"eventId" : 420,
+              "sportId" : 3,
+              "nameEvent" : "event by nikitin",
+              "aboutEvent" : "about",
+              "country" : "Россия",
+              "region" : "Москва",
+              "city" : "Москва",
+              "address" : "binnnn",
+              "performancePlace" : "noten",
+              "performanceTime" : "10:00",
+              "eventData" : "2025-06-06",
+              "ringsCount" : 3,
+              "payBySite" : true,
+              "sortitionAuto" : true,
+              "eventsPrices" : [],
+              "organizerPhone" : "8916101224",
+              "organizerMail" : "andnikitn5@gmail.com",
+            	"useDisciplines": true,
+              "selectedDisciplineIds": [2,5]
+            }
+          disabled: false
+          type: text
+          multiline: application/json
+    parameters:
+      - id: pair_ccc66dab60bf4ca49f7f0e7c7b83eecd
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/get_event_for_edit
+    name: get_event_for_edit-stage
+    meta:
+      id: req_cd5a97c5294243ee9d3059820e14f4e8
+      created: 1744909219384
+      modified: 1744909219384
+      isPrivate: false
+      sortKey: -1742999190543.75
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "420"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_2133da96b3ba484db00905099d6875c4
+        name: Content-Type
+        value: application/json
+        disabled: false
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/open_events/organizer/battles
+    name: create_battle
+    meta:
+      id: req_9309c1dfeb6545cda66eb8c1600da84f
+      created: 1745230288019
+      modified: 1745231048104
+      isPrivate: false
+      sortKey: -1742999190534.375
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"eventId": 414,
+          "eventVersion": 405,
+          "fighterIds": [1,21850] 
+        }
+    parameters:
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6Im9yZ2FuaXplciIsImV4cCI6MTc1MTUzMTA5Mn0.ktjmsBdygz1alWQUczvYQpWVuyZ4H77GARnAGINX0gU
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/trainer/send_bid_for_pupils
+    name: send_bid_for_pupils
+    meta:
+      id: req_d9607657c24046cf85414704ca58e647
+      created: 1745333114906
+      modified: 1745397624639
+      isPrivate: false
+      sortKey: -1742999190325
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "idEvent": 15,
+        	"pupilSelectedList": [
+        	   {
+                "fighterId": 6459,
+                "disciplineId": 1
+             },
+             {
+                "fighterId": 8232,
+                "disciplineId": 5
+             }
+        	],
+        		"task": "SEND"
+        }
+    parameters:
+      - id: pair_2a7e2569662c4c9eb2efcaec763dd681
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDMzNSwicm9sZSI6InN1bnNleSIsImV4cCI6MTc1MzEwNTE5NX0.od-sgeGG6rMN1Lq3ZAk0UK0OW09E_OBFMfmi38xcSJo
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://boxcompetition.ru/images/ANginx.png
+    name: New Request
+    meta:
+      id: req_1acf649a16b04f69a3688efda61aa2f3
+      created: 1745498324938
+      modified: 1745498350537
+      isPrivate: false
+      sortKey: -1745498324938
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/fighter/send_bid
+    name: fighter-send-bid2
+    meta:
+      id: req_268e0bf995084f9eb6a1a744c466cad9
+      created: 1745825557205
+      modified: 1746606144083
+      isPrivate: false
+      sortKey: -1742999190576.5625
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "eventId": 15, 
+          "weight": 65.3,
+          "disciplineId": null,
+          "disciplineComment": null
+        }
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkyLCJyb2xlIjoibWVtYmVyIiwiZXhwIjoxNzc1ODMwMDE3fQ.GwdoKnuecEM9wV6Y1rjwf6cPODS1gXtLgOs5hTvqWD0
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/bid_status
+    name: bid_status
+    meta:
+      id: req_b833354905254495b09e7189bbb0c70f
+      created: 1746197117800
+      modified: 1746197373402
+      isPrivate: false
+      sortKey: -1742999190577.3438
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "175"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkyLCJyb2xlIjoibWVtYmVyIiwiZXhwIjoxNzc1ODMwMDE3fQ.GwdoKnuecEM9wV6Y1rjwf6cPODS1gXtLgOs5hTvqWD0
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:6300/api/events/bid_status_record
+    name: bid_status_record
+    meta:
+      id: req_851a85c3b7eb4e68bbf5346560dc8167
+      created: 1746450716874
+      modified: 1746450724464
+      isPrivate: false
+      sortKey: -1742999190576.9531
+    method: GET
+    parameters:
+      - id: pair_417f81727262459eb548d386dc1d0ac0
+        name: eventId
+        value: "175"
+        disabled: false
+      - id: pair_60fc05f175354c99b8b8ba78493b23c0
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_46ecd1e61b1744849a17552c1cc6f83f
+      - id: pair_d467237e6a1242b3ba45de7952341aa2
+        disabled: false
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTkyLCJyb2xlIjoibWVtYmVyIiwiZXhwIjoxNzc1ODMwMDE3fQ.GwdoKnuecEM9wV6Y1rjwf6cPODS1gXtLgOs5hTvqWD0
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4f0621c9067e2c53c75ad85100dd0dac4a66bc80
+    created: 1742998287178
+    modified: 1746622726887
+  cookies:
+    - key: JSESSIONID
+      value: 879F6730810E1E0B936B45CCBEBD462C
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-03-26T14:35:57.180Z
+      lastAccessed: 2025-05-07T12:58:46.504Z
+      id: 9656ba74-cfe7-41c5-a057-3d779b4dd5ad
+    - key: JSESSIONID
+      value: CC7DC242537A47D19DBB445B67A98F6B
+      domain: strikerstat-stage.twc1.net
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-04-07T11:45:37.577Z
+      lastAccessed: 2025-05-07T12:58:46.887Z
+      id: aa8a7445-e5f2-4b3f-95bb-be9ef66d199b
+environments:
+  name: Base Environment
+  meta:
+    id: env_4f0621c9067e2c53c75ad85100dd0dac4a66bc80
+    created: 1742998287178
+    modified: 1742998287178
+    isPrivate: false
